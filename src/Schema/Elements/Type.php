@@ -219,4 +219,20 @@ final class Type implements Schema
 		}
 		return $this->doFinalize($value, $context);
 	}
+
+	/**
+	 * @return string
+	 */
+	public function getType(): string
+	{
+		return $this->type;
+	}
+
+	/**
+	 * @return array
+	 */
+	public function getRange(): array
+	{
+		return $this->range;
+	}
 }

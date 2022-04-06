@@ -132,4 +132,12 @@ final class AnyOf implements Schema
 		}
 		return $this->default;
 	}
+
+	/**
+	 * @return array
+	 */
+	public function getSet(): array
+	{
+		return $this->set;
+	}
 }

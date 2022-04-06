@@ -201,4 +201,12 @@ final class Structure implements Schema
 			? $this->complete([], $context)
 			: null;
 	}
+
+	/**
+	 * @return Schema[]
+	 */
+	public function getItems(): array
+	{
+		return $this->items;
+	}
 }
